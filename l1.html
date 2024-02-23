@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Consultancy Booking</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        h1, h2 {
+            margin-bottom: 0.5em;
+        }
+
+        .booking-form {
+            max-width: 600px;
+            margin: 2em auto;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form {
+            display: grid;
+            gap: 1em;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.5em;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Doctor Consultancy Booking</h1>
+    </header>
+    <section class="booking-form">
+        <h2>Book an Appointment</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="dr-smith">Dr. Smith</option>
+                <option value="dr-jones">Dr. Jones</option>
+                <!-- Add more doctors as needed -->
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Doctor Consultancy Booking</p>
+    </footer>
+</body>
+</html>
